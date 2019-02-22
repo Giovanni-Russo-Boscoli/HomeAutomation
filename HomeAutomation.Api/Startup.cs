@@ -2,6 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using HomeAutomationModel;
+using HomeAutomationRepository.Concrete;
+using HomeAutomationRepository.Interface;
+using HomeAutomationService.Concrete;
+using HomeAutomationService.Interface;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -23,6 +28,9 @@ namespace HomeAutomation
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddSingleton(Configuration);
+            services.AddScoped<IHomeAssistantService, HomeAssistantService>();
+            services.AddScoped<IHomeAssistantRepository, HomeAssistantRepository>();
             services.AddMvc();
         }
 

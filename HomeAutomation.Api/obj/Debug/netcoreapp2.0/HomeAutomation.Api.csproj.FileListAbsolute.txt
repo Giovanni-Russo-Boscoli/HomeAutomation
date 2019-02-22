@@ -3,9 +3,16 @@ C:\Users\E7440 i7 16GB\Desktop\DEVELOP\repos\homeautomation\HomeAutomation.Api\b
 C:\Users\E7440 i7 16GB\Desktop\DEVELOP\repos\homeautomation\HomeAutomation.Api\bin\Debug\netcoreapp2.0\HomeAutomation.Api.runtimeconfig.dev.json
 C:\Users\E7440 i7 16GB\Desktop\DEVELOP\repos\homeautomation\HomeAutomation.Api\bin\Debug\netcoreapp2.0\HomeAutomation.Api.dll
 C:\Users\E7440 i7 16GB\Desktop\DEVELOP\repos\homeautomation\HomeAutomation.Api\bin\Debug\netcoreapp2.0\HomeAutomation.Api.pdb
-C:\Users\E7440 i7 16GB\Desktop\DEVELOP\repos\homeautomation\HomeAutomation.Api\obj\Debug\netcoreapp2.0\HomeAutomation.Api.csprojResolveAssemblyReference.cache
+C:\Users\E7440 i7 16GB\Desktop\DEVELOP\repos\homeautomation\HomeAutomation.Api\bin\Debug\netcoreapp2.0\HomeAutomationModel.dll
+C:\Users\E7440 i7 16GB\Desktop\DEVELOP\repos\homeautomation\HomeAutomation.Api\bin\Debug\netcoreapp2.0\HomeAutomationRepository.dll
+C:\Users\E7440 i7 16GB\Desktop\DEVELOP\repos\homeautomation\HomeAutomation.Api\bin\Debug\netcoreapp2.0\HomeAutomationService.dll
+C:\Users\E7440 i7 16GB\Desktop\DEVELOP\repos\homeautomation\HomeAutomation.Api\bin\Debug\netcoreapp2.0\HomeAutomationService.pdb
+C:\Users\E7440 i7 16GB\Desktop\DEVELOP\repos\homeautomation\HomeAutomation.Api\bin\Debug\netcoreapp2.0\HomeAutomationModel.pdb
+C:\Users\E7440 i7 16GB\Desktop\DEVELOP\repos\homeautomation\HomeAutomation.Api\bin\Debug\netcoreapp2.0\HomeAutomationRepository.pdb
 C:\Users\E7440 i7 16GB\Desktop\DEVELOP\repos\homeautomation\HomeAutomation.Api\obj\Debug\netcoreapp2.0\HomeAutomation.Api.csproj.CoreCompileInputs.cache
 C:\Users\E7440 i7 16GB\Desktop\DEVELOP\repos\homeautomation\HomeAutomation.Api\obj\Debug\netcoreapp2.0\HomeAutomation.Api.AssemblyInfoInputs.cache
 C:\Users\E7440 i7 16GB\Desktop\DEVELOP\repos\homeautomation\HomeAutomation.Api\obj\Debug\netcoreapp2.0\HomeAutomation.Api.AssemblyInfo.cs
 C:\Users\E7440 i7 16GB\Desktop\DEVELOP\repos\homeautomation\HomeAutomation.Api\obj\Debug\netcoreapp2.0\HomeAutomation.Api.dll
 C:\Users\E7440 i7 16GB\Desktop\DEVELOP\repos\homeautomation\HomeAutomation.Api\obj\Debug\netcoreapp2.0\HomeAutomation.Api.pdb
+C:\Users\E7440 i7 16GB\Desktop\DEVELOP\repos\homeautomation\HomeAutomation.Api\obj\Debug\netcoreapp2.0\HomeAutomation.Api.csprojAssemblyReference.cache
+C:\Users\E7440 i7 16GB\Desktop\DEVELOP\repos\homeautomation\HomeAutomation.Api\obj\Debug\netcoreapp2.0\HomeAutomation.Api.csproj.CopyComplete

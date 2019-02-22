@@ -1,0 +1,12 @@
+C:\Users\E7440 i7 16GB\Desktop\DEVELOP\repos\homeautomation\HomeAutomationModel\bin\Debug\netcoreapp2.0\HomeAutomationModel.deps.json
+C:\Users\E7440 i7 16GB\Desktop\DEVELOP\repos\homeautomation\HomeAutomationModel\bin\Debug\netcoreapp2.0\HomeAutomationModel.dll
+C:\Users\E7440 i7 16GB\Desktop\DEVELOP\repos\homeautomation\HomeAutomationModel\bin\Debug\netcoreapp2.0\HomeAutomationModel.pdb
+C:\Users\E7440 i7 16GB\Desktop\DEVELOP\repos\homeautomation\HomeAutomationModel\bin\Debug\netcoreapp2.0\Microsoft.Extensions.Options.dll
+C:\Users\E7440 i7 16GB\Desktop\DEVELOP\repos\homeautomation\HomeAutomationModel\bin\Debug\netcoreapp2.0\Microsoft.Extensions.Options.xml
+C:\Users\E7440 i7 16GB\Desktop\DEVELOP\repos\homeautomation\HomeAutomationModel\obj\Debug\netcoreapp2.0\HomeAutomationModel.csproj.CoreCompileInputs.cache
+C:\Users\E7440 i7 16GB\Desktop\DEVELOP\repos\homeautomation\HomeAutomationModel\obj\Debug\netcoreapp2.0\HomeAutomationModel.AssemblyInfoInputs.cache
+C:\Users\E7440 i7 16GB\Desktop\DEVELOP\repos\homeautomation\HomeAutomationModel\obj\Debug\netcoreapp2.0\HomeAutomationModel.AssemblyInfo.cs
+C:\Users\E7440 i7 16GB\Desktop\DEVELOP\repos\homeautomation\HomeAutomationModel\obj\Debug\netcoreapp2.0\HomeAutomationModel.dll
+C:\Users\E7440 i7 16GB\Desktop\DEVELOP\repos\homeautomation\HomeAutomationModel\obj\Debug\netcoreapp2.0\HomeAutomationModel.pdb
+C:\Users\E7440 i7 16GB\Desktop\DEVELOP\repos\homeautomation\HomeAutomationModel\obj\Debug\netcoreapp2.0\HomeAutomationModel.csprojAssemblyReference.cache
+C:\Users\E7440 i7 16GB\Desktop\DEVELOP\repos\homeautomation\HomeAutomationModel\obj\Debug\netcoreapp2.0\HomeAutomationModel.csproj.CopyComplete
