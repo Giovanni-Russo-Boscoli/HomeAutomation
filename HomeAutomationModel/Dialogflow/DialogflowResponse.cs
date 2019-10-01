@@ -26,7 +26,7 @@ namespace HomeAutomationModel.Dialogflow.DialogflowResponse
     public partial class Payload
     {
         [JsonProperty("google")]
-        public Google Google { get; set; }
+        public MyGoogle MyGoogle { get; set; }
 
         //[JsonProperty("facebook")]
         //public Facebook Facebook { get; set; }
@@ -35,7 +35,7 @@ namespace HomeAutomationModel.Dialogflow.DialogflowResponse
         //public Facebook Slack { get; set; }
     }
 
-    public partial class Google
+    public partial class MyGoogle
     {
         [JsonProperty("expectUserResponse")]
         public bool ExpectUserResponse { get; set; }

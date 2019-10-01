@@ -1,4 +1,5 @@
-﻿using HomeAutomationModel.CustomViewModule;
+﻿using Google.Apis.Dialogflow.v2.Data;
+using HomeAutomationModel.CustomViewModule;
 using HomeAutomationModel.Dialogflow.DialogflowRequest;
 using HomeAutomationModel.Dialogflow.DialogflowResponse;
 using HomeAutomationService.Interface;
@@ -38,6 +39,16 @@ namespace HomeAutomation.Api.Controllers
                 return await FormatResposeDialogFlow("I'm sorry, but I didn't find the device");
             }
             return await FormatResposeDialogFlow(await service.DeviceRequestCommand(dialogflowRequest));
+        }
+
+        [HttpPost]
+        public async Task<JsonResult> DeviceRequestCommandDialogFlow([FromBody]GoogleCloudDialogflowV2WebhookRequest dialogflowRequest)
+        {
+            if (dialogflowRequest == null || string.IsNullOrEmpty(dialogflowRequest.QueryResult.Parameters["idDevice"].ToString()))
+            {
+                return await FormatResposeDialogFlow("I'm sorry, but I didn't find the device");
+            }
+            return await FormatResposeDialogFlow(await service.DeviceRequestCommandDialogFlow(dialogflowRequest));
         }
 
         [HttpPost]
@@ -90,7 +101,7 @@ namespace HomeAutomation.Api.Controllers
                 FulfillmentText = "Response coming from 'FormatResposeDialogFlow' API HOME AUTOMATION",
                 Payload = new Payload()
                 {
-                    Google = new Google()
+                    MyGoogle = new MyGoogle()
                     {
                         ExpectUserResponse = true,
                         RichResponse = new RichResponse()
@@ -123,5 +134,26 @@ namespace HomeAutomation.Api.Controllers
 
             return await Task.FromResult(jr);
         }
+
+        //public async Task<IActionResult> Details(int? id)
+        //{
+        //    if (id == null)
+        //    {
+        //        return NotFound();
+        //    }
+
+        //    var student = await _context.Students
+        //        .Include(s => s.Enrollments)
+        //            .ThenInclude(e => e.Course)
+        //        .AsNoTracking()
+        //        .FirstOrDefaultAsync(m => m.ID == id);
+
+        //    if (student == null)
+        //    {
+        //        return NotFound();
+        //    }
+
+        //    return View(student);
+        //}
     }
 }

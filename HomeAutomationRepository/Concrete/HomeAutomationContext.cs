@@ -42,6 +42,14 @@ namespace HomeAutomationRepository.Concrete
             modelBuilder.Entity<Device>().Property(s => s.IP).HasColumnName("ip").IsRequired();
             modelBuilder.Entity<Device>().HasOne(a => a.ModelDevice).WithMany();
             modelBuilder.Entity<Device>().HasOne(a => a.Area).WithMany();
+
+            //DEVICECHANNELDETAIL
+            modelBuilder.Entity<DeviceChannelDetail>().HasKey(a => a.DeviceChannelDetail_Id);
+            modelBuilder.Entity<DeviceChannelDetail>().Property(s => s.Channel).HasColumnName("channel").IsRequired();
+            modelBuilder.Entity<DeviceChannelDetail>().HasOne(a => a.Action).WithMany();
+            modelBuilder.Entity<DeviceChannelDetail>().HasOne(a => a.Device).WithMany();
+            modelBuilder.Entity<DeviceChannelDetail>().HasOne(a => a.State).WithMany();
+            modelBuilder.Entity<DeviceChannelDetail>().HasOne(a => a.TypeDevice).WithMany();
         }
 
         //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -56,5 +64,6 @@ namespace HomeAutomationRepository.Concrete
         public DbSet<ModelDevice> ModelDevice { get; set; }
         public DbSet<State> State { get; set; }
         public DbSet<Device> Device { get; set; }
+        public DbSet<DeviceChannelDetail> DeviceChannelDetail { get; set; }
     }
 }

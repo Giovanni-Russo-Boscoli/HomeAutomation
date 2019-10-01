@@ -8,6 +8,7 @@ using System;
 using System.Text;
 using HomeAutomationModel.Model;
 using Microsoft.EntityFrameworkCore;
+using System.Threading.Tasks;
 
 namespace HomeAutomationRepository.Concrete
 {
@@ -22,16 +23,19 @@ namespace HomeAutomationRepository.Concrete
         //    _configuration = configuration;
         //}
 
-        public HomeAssistantRepository(HomeAutomationContext context)
+        public HomeAssistantRepository(HomeAutomationContext context, IConfiguration configuration)
         {
             _context = context;
+            _configuration = configuration;
         }
 
         public IEnumerable<IConfigurationSection> GetInformationDeviceById(string idDevice)
         {
-            testeConnection();
+            //testeConnection();
             return ((_configuration.GetSection(HomeAssistantBase.Prefix_IdDevice).GetSection(idDevice).GetChildren()).AsEnumerable());
         }
+
+        
 
         public void testeConnection()
         {
@@ -42,6 +46,12 @@ namespace HomeAutomationRepository.Concrete
             var e = _context.State.Include(a => a.TypeDevice).Where(x => x.State_Id == 1);
             var f = _context.ModelDevice.Where(x => x.ModelDevice_Id == 1);
             var g = _context.Device.Include(x => x.ModelDevice).Include(x => x.Area).Where(x => x.Device_Id == 1);
+            var h = _context.DeviceChannelDetail
+                .Include(x => x.TypeDevice)
+                .Include(x => x.Action)
+                .Include(x => x.State)
+                .Include(x => x.Device)
+                .Where(x => x.DeviceChannelDetail_Id == 1);
             var c = "";
 
             //var _homeAutomationConnection = _configuration.GetConnectionString("HomeAutomationConnection");
